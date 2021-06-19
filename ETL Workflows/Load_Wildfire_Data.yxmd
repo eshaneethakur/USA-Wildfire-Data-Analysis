@@ -1,0 +1,902 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="6" y="-6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:SQLServer_Database|||select * 
+from Wildfires.dbo.Fires</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:SQLServer_Database
+Query=select * 
+from Wildfires.db...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="OBJECTID" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="Int32" />
+            <Field name="FOD_ID" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="Int32" />
+            <Field name="FPA_ID" size="100" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="SOURCE_SYSTEM_TYPE" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="SOURCE_SYSTEM" size="30" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="NWCG_REPORTING_AGENCY" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="NWCG_REPORTING_UNIT_ID" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="NWCG_REPORTING_UNIT_NAME" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="SOURCE_REPORTING_UNIT" size="30" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="SOURCE_REPORTING_UNIT_NAME" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="LOCAL_FIRE_REPORT_ID" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="LOCAL_INCIDENT_ID" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="FIRE_CODE" size="10" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="FIRE_NAME" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="ICS_209_INCIDENT_NUMBER" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="ICS_209_NAME" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="MTBS_ID" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="MTBS_FIRE_NAME" size="50" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="COMPLEX_NAME" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="FIRE_YEAR" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="Int32" />
+            <Field name="DISCOVERY_DATE" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="Double" />
+            <Field name="DISCOVERY_DOY" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="Int32" />
+            <Field name="DISCOVERY_TIME" size="4" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="STAT_CAUSE_CODE" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="Double" />
+            <Field name="STAT_CAUSE_DESCR" size="100" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="CONT_DATE" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="Double" />
+            <Field name="CONT_DOY" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="Int32" />
+            <Field name="CONT_TIME" size="4" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="FIRE_SIZE" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="Double" />
+            <Field name="FIRE_SIZE_CLASS" size="1" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="LATITUDE" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="Double" />
+            <Field name="LONGITUDE" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="Double" />
+            <Field name="OWNER_CODE" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="Double" />
+            <Field name="OWNER_DESCR" size="100" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="STATE" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="COUNTY" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="FIPS_CODE" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="FIPS_NAME" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="Shape" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="6" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:azure_prod|||select * 
+from WildfireData.dbo.NWCG_Data</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:azure_prod
+Query=select * 
+from WildfireData...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Unit_ID" size="20" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.NWCG_Data" type="V_String" />
+            <Field name="Name" size="100" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.NWCG_Data" type="V_String" />
+            <Field name="Gacc" size="20" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.NWCG_Data" type="V_String" />
+            <Field name="Wildland_Role" size="100" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.NWCG_Data" type="V_String" />
+            <Field name="Unit_Type" size="50" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.NWCG_Data" type="V_String" />
+            <Field name="Department" size="10" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.NWCG_Data" type="V_String" />
+            <Field name="Agency" size="10" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.NWCG_Data" type="V_String" />
+            <Field name="State" size="3" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.NWCG_Data" type="V_String" />
+            <Field name="Country" size="3" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.NWCG_Data" type="V_String" />
+            <Field name="Geographic_Area" size="3" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.NWCG_Data" type="V_String" />
+            <Field name="Code" size="10" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.NWCG_Data" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:azure_prod|||select * 
+from WildfireData.dbo.Fire_Causes</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:azure_prod
+Query=select * 
+from WildfireData...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cause_Code" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Fire_Causes" type="Int32" />
+            <Field name="Cause_Description" size="50" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Fire_Causes" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="282" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:azure_prod|||select * 
+from WildfireData.dbo.Land_Owners</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:azure_prod
+Query=select * 
+from WildfireData...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Owner_Code" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Land_Owners" type="Int32" />
+            <Field name="Owner_Description" size="100" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Land_Owners" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="78" y="-6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="OBJECTID" selected="True" rename="Object_ID" />
+            <SelectField field="NWCG_REPORTING_UNIT_ID" selected="True" />
+            <SelectField field="SOURCE_REPORTING_UNIT" selected="True" rename="Source_Reporting_Unit" />
+            <SelectField field="SOURCE_REPORTING_UNIT_NAME" selected="True" rename="Source_Reporting_Name" />
+            <SelectField field="FIRE_CODE" selected="True" rename="Left_Fire_Code" />
+            <SelectField field="FIRE_NAME" selected="True" rename="Left_Fire_Name" />
+            <SelectField field="FIRE_YEAR" selected="True" />
+            <SelectField field="DISCOVERY_DOY" selected="True" />
+            <SelectField field="DISCOVERY_TIME" selected="True" type="Int32" size="4" />
+            <SelectField field="STAT_CAUSE_CODE" selected="True" type="Int32" size="4" />
+            <SelectField field="CONT_DOY" selected="True" />
+            <SelectField field="CONT_TIME" selected="True" type="Int32" size="4" />
+            <SelectField field="FIRE_SIZE" selected="True" />
+            <SelectField field="FIRE_SIZE_CLASS" selected="True" />
+            <SelectField field="LATITUDE" selected="True" />
+            <SelectField field="LONGITUDE" selected="True" />
+            <SelectField field="OWNER_CODE" selected="True" rename="Left_Owner_Code" type="Int32" size="4" />
+            <SelectField field="STATE" selected="True" />
+            <SelectField field="FIPS_CODE" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="162" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="NWCG_REPORTING_UNIT_ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Unit_ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Object_ID" selected="True" input="Left_" />
+                <SelectField field="Left_Source_Reporting_Unit" selected="True" input="Left_" />
+                <SelectField field="Left_Source_Reporting_Name" selected="True" input="Left_" />
+                <SelectField field="Left_Left_Fire_Code" selected="True" input="Left_" />
+                <SelectField field="Left_Left_Fire_Name" selected="True" input="Left_" />
+                <SelectField field="Left_FIRE_YEAR" selected="True" input="Left_" />
+                <SelectField field="Left_DISCOVERY_DOY" selected="True" input="Left_" />
+                <SelectField field="Left_DISCOVERY_TIME" selected="True" input="Left_" />
+                <SelectField field="Left_STAT_CAUSE_CODE" selected="True" input="Left_" />
+                <SelectField field="Left_CONT_DOY" selected="True" input="Left_" />
+                <SelectField field="Left_CONT_TIME" selected="True" input="Left_" />
+                <SelectField field="Left_FIRE_SIZE" selected="True" input="Left_" />
+                <SelectField field="Left_FIRE_SIZE_CLASS" selected="True" input="Left_" />
+                <SelectField field="Left_LATITUDE" selected="True" input="Left_" />
+                <SelectField field="Left_LONGITUDE" selected="True" input="Left_" />
+                <SelectField field="Left_Left_Owner_Code" selected="True" input="Left_" />
+                <SelectField field="Left_STATE" selected="True" input="Left_" />
+                <SelectField field="Left_FIPS_CODE" selected="True" input="Left_" />
+                <SelectField field="Right_Unit_ID" selected="True" input="Right_" />
+                <SelectField field="Right_State" selected="False" rename="Right_State" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="258" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="STAT_CAUSE_CODE" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Cause_Code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Object_ID" selected="True" input="Left_" />
+                <SelectField field="Left_Source_Reporting_Unit" selected="True" input="Left_" />
+                <SelectField field="Left_Source_Reporting_Name" selected="True" input="Left_" />
+                <SelectField field="Left_Left_Fire_Code" selected="True" input="Left_" />
+                <SelectField field="Left_Left_Fire_Name" selected="True" input="Left_" />
+                <SelectField field="Left_FIRE_YEAR" selected="True" input="Left_" />
+                <SelectField field="Left_DISCOVERY_DOY" selected="True" input="Left_" />
+                <SelectField field="Left_DISCOVERY_TIME" selected="True" input="Left_" />
+                <SelectField field="Left_CONT_DOY" selected="True" input="Left_" />
+                <SelectField field="Left_CONT_TIME" selected="True" input="Left_" />
+                <SelectField field="Left_FIRE_SIZE" selected="True" input="Left_" />
+                <SelectField field="Left_FIRE_SIZE_CLASS" selected="True" input="Left_" />
+                <SelectField field="Left_LATITUDE" selected="True" input="Left_" />
+                <SelectField field="Left_LONGITUDE" selected="True" input="Left_" />
+                <SelectField field="Left_Left_Owner_Code" selected="True" input="Left_" />
+                <SelectField field="Left_STATE" selected="True" input="Left_" />
+                <SelectField field="Left_FIPS_CODE" selected="True" input="Left_" />
+                <SelectField field="Left_Unit_ID" selected="True" input="Left_" />
+                <SelectField field="Right_Cause_Code" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="366" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Left_Owner_Code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Owner_Code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Object_ID" selected="True" input="Left_" />
+                <SelectField field="Left_Source_Reporting_Unit" selected="True" input="Left_" />
+                <SelectField field="Left_Source_Reporting_Name" selected="True" input="Left_" />
+                <SelectField field="Left_Left_Fire_Code" selected="True" input="Left_" />
+                <SelectField field="Left_Left_Fire_Name" selected="True" input="Left_" />
+                <SelectField field="Left_FIRE_YEAR" selected="True" input="Left_" />
+                <SelectField field="Left_DISCOVERY_DOY" selected="True" input="Left_" />
+                <SelectField field="Left_DISCOVERY_TIME" selected="True" input="Left_" />
+                <SelectField field="Left_CONT_DOY" selected="True" input="Left_" />
+                <SelectField field="Left_CONT_TIME" selected="True" input="Left_" />
+                <SelectField field="Left_FIRE_SIZE" selected="True" input="Left_" />
+                <SelectField field="Left_FIRE_SIZE_CLASS" selected="True" input="Left_" />
+                <SelectField field="Left_LATITUDE" selected="True" input="Left_" />
+                <SelectField field="Left_LONGITUDE" selected="True" input="Left_" />
+                <SelectField field="Left_STATE" selected="True" input="Left_" />
+                <SelectField field="Left_FIPS_CODE" selected="True" input="Left_" />
+                <SelectField field="Left_Unit_ID" selected="True" input="Left_" />
+                <SelectField field="Left_Cause_Code" selected="True" input="Left_" />
+                <SelectField field="Right_Owner_Code" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="366" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">aka:azure_prod|||select * 
+from WildfireData.dbo.Fire_Size</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:azure_prod
+Query=select * 
+from WildfireData...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Fire_Size_Class" size="10" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Fire_Size" type="V_String" />
+            <Field name="Fire_Size" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Fire_Size" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="450" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="FIRE_SIZE" />
+            <Field field="FIRE_SIZE_CLASS" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Fire_Size" />
+            <Field field="Fire_Size_Class" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Object_ID" selected="True" input="Left_" />
+                <SelectField field="Left_Source_Reporting_Unit" selected="True" input="Left_" />
+                <SelectField field="Left_Source_Reporting_Name" selected="True" input="Left_" />
+                <SelectField field="Left_Left_Fire_Code" selected="True" input="Left_" />
+                <SelectField field="Left_Left_Fire_Name" selected="True" input="Left_" />
+                <SelectField field="Left_FIRE_YEAR" selected="True" input="Left_" />
+                <SelectField field="Left_DISCOVERY_DOY" selected="True" input="Left_" />
+                <SelectField field="Left_DISCOVERY_TIME" selected="True" input="Left_" />
+                <SelectField field="Left_CONT_DOY" selected="True" input="Left_" />
+                <SelectField field="Left_CONT_TIME" selected="True" input="Left_" />
+                <SelectField field="Left_LATITUDE" selected="True" input="Left_" />
+                <SelectField field="Left_LONGITUDE" selected="True" input="Left_" />
+                <SelectField field="Left_STATE" selected="True" input="Left_" />
+                <SelectField field="Left_FIPS_CODE" selected="True" input="Left_" />
+                <SelectField field="Left_Unit_ID" selected="True" input="Left_" />
+                <SelectField field="Left_Cause_Code" selected="True" input="Left_" />
+                <SelectField field="Left_Owner_Code" selected="True" input="Left_" />
+                <SelectField field="Right_Fire_Size_Class" selected="True" input="Right_" />
+                <SelectField field="Right_Fire_Size" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="450" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">aka:azure_prod|||select * 
+from WildfireData.dbo.Fire</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:azure_prod
+Query=select * 
+from WildfireData...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Fire_ID" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Fire" type="Int32" />
+            <Field name="Fire_Name" size="255" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Fire" type="V_String" />
+            <Field name="ICS_209_Incident_Number" size="255" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Fire" type="V_String" />
+            <Field name="ICS_209_Name" size="255" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Fire" type="V_String" />
+            <Field name="MTBS_ID" size="255" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Fire" type="V_String" />
+            <Field name="MTBS_Fire_Name" size="50" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Fire" type="V_String" />
+            <Field name="Fire_Code" size="50" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Fire" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="558" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Left_Fire_Code" />
+            <Field field="Left_Fire_Name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Fire_Code" />
+            <Field field="Fire_Name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Object_ID" selected="True" input="Left_" />
+                <SelectField field="Left_Source_Reporting_Unit" selected="True" input="Left_" />
+                <SelectField field="Left_Source_Reporting_Name" selected="True" input="Left_" />
+                <SelectField field="Left_FIRE_YEAR" selected="True" input="Left_" />
+                <SelectField field="Left_DISCOVERY_DOY" selected="True" input="Left_" />
+                <SelectField field="Left_DISCOVERY_TIME" selected="True" input="Left_" />
+                <SelectField field="Left_CONT_DOY" selected="True" input="Left_" />
+                <SelectField field="Left_CONT_TIME" selected="True" input="Left_" />
+                <SelectField field="Left_LATITUDE" selected="True" input="Left_" />
+                <SelectField field="Left_LONGITUDE" selected="True" input="Left_" />
+                <SelectField field="Left_STATE" selected="True" input="Left_" />
+                <SelectField field="Left_FIPS_CODE" selected="True" input="Left_" />
+                <SelectField field="Left_Unit_ID" selected="True" input="Left_" />
+                <SelectField field="Left_Cause_Code" selected="True" input="Left_" />
+                <SelectField field="Left_Owner_Code" selected="True" input="Left_" />
+                <SelectField field="Left_Fire_Size_Class" selected="True" input="Left_" />
+                <SelectField field="Left_Fire_Size" selected="True" input="Left_" />
+                <SelectField field="Right_Fire_ID" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="558" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">aka:azure_prod|||select * 
+from WildfireData.dbo.Geography_Dimension</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:azure_prod
+Query=select * 
+from WildfireData...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Geography_ID" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Geography_Dimension" type="Int32" />
+            <Field name="Latitude" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Geography_Dimension" type="Double" />
+            <Field name="Longitude" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Geography_Dimension" type="Double" />
+            <Field name="State" size="10" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Geography_Dimension" type="V_String" />
+            <Field name="County_Code" size="10" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Geography_Dimension" type="V_String" />
+            <Field name="County_Name" size="100" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Geography_Dimension" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="654" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="LATITUDE" />
+            <Field field="LONGITUDE" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Latitude" />
+            <Field field="Longitude" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Object_ID" selected="True" input="Left_" />
+                <SelectField field="Left_Source_Reporting_Unit" selected="True" input="Left_" />
+                <SelectField field="Left_Source_Reporting_Name" selected="True" input="Left_" />
+                <SelectField field="Left_FIRE_YEAR" selected="True" input="Left_" />
+                <SelectField field="Left_DISCOVERY_DOY" selected="True" input="Left_" />
+                <SelectField field="Left_DISCOVERY_TIME" selected="True" input="Left_" />
+                <SelectField field="Left_CONT_DOY" selected="True" input="Left_" />
+                <SelectField field="Left_CONT_TIME" selected="True" input="Left_" />
+                <SelectField field="Left_Unit_ID" selected="True" input="Left_" />
+                <SelectField field="Left_Cause_Code" selected="True" input="Left_" />
+                <SelectField field="Left_Owner_Code" selected="True" input="Left_" />
+                <SelectField field="Left_Fire_Size_Class" selected="True" input="Left_" />
+                <SelectField field="Left_Fire_Size" selected="True" input="Left_" />
+                <SelectField field="Left_Fire_ID" selected="True" input="Left_" />
+                <SelectField field="Right_Geography_ID" selected="True" input="Right_" />
+                <SelectField field="Right_Latitude" selected="False" rename="Right_Latitude" input="Right_" />
+                <SelectField field="Right_Longitude" selected="False" rename="Right_Longitude" input="Right_" />
+                <SelectField field="Right_State" selected="False" rename="Right_State" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="654" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">aka:azure_prod|||select * 
+from WildfireData.dbo.Date_Dimension</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:azure_prod
+Query=select * 
+from WildfireData...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date_ID" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Date_Dimension" type="Int64" />
+            <Field name="Fire_Year" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Date_Dimension" type="Int32" />
+            <Field name="Discovery_Date" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Date_Dimension" type="Date" />
+            <Field name="Discovery_DOY" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Date_Dimension" type="Int32" />
+            <Field name="Discovery_Time" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Date_Dimension" type="Int32" />
+            <Field name="Cont_Date" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Date_Dimension" type="Date" />
+            <Field name="Cont_DOY" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Date_Dimension" type="Int32" />
+            <Field name="Cont_Time" source="File: aka:azure_prod|||select * &#xA;from WildfireData.dbo.Date_Dimension" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="774" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="FIRE_YEAR" />
+            <Field field="DISCOVERY_DOY" />
+            <Field field="DISCOVERY_TIME" />
+            <Field field="CONT_DOY" />
+            <Field field="CONT_TIME" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Fire_Year" />
+            <Field field="Discovery_DOY" />
+            <Field field="Discovery_Time" />
+            <Field field="Cont_DOY" />
+            <Field field="Cont_Time" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Object_ID" selected="True" input="Left_" />
+                <SelectField field="Left_Source_Reporting_Unit" selected="True" input="Left_" />
+                <SelectField field="Left_Source_Reporting_Name" selected="True" input="Left_" />
+                <SelectField field="Left_Unit_ID" selected="True" input="Left_" />
+                <SelectField field="Left_Cause_Code" selected="True" input="Left_" />
+                <SelectField field="Left_Owner_Code" selected="True" input="Left_" />
+                <SelectField field="Left_Fire_Size_Class" selected="True" input="Left_" />
+                <SelectField field="Left_Fire_Size" selected="True" input="Left_" />
+                <SelectField field="Left_Fire_ID" selected="True" input="Left_" />
+                <SelectField field="Left_Geography_ID" selected="True" input="Left_" />
+                <SelectField field="Right_Date_ID" selected="True" input="Right_" />
+                <SelectField field="Right_Fire_Year" selected="False" rename="Right_Fire_Year" input="Right_" />
+                <SelectField field="Right_Discovery_DOY" selected="False" rename="Right_Discovery_DOY" input="Right_" />
+                <SelectField field="Right_Discovery_Time" selected="False" rename="Right_Discovery_Time" input="Right_" />
+                <SelectField field="Right_Cont_DOY" selected="False" rename="Right_Cont_DOY" input="Right_" />
+                <SelectField field="Right_Cont_Time" selected="False" rename="Right_Cont_Time" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="918" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:azure_prod|||Wildfire_Data</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Append</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:azure_prod
+Query=Wildfire_Data</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="14" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="15" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Join" />
+      <Destination ToolID="15" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="16" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Join" />
+      <Destination ToolID="16" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Join" />
+      <Destination ToolID="20" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Join" />
+      <Destination ToolID="25" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Join" />
+      <Destination ToolID="27" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Join" />
+      <Destination ToolID="29" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Join" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Wildfire_Data</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

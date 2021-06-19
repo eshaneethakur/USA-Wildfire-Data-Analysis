@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:SQLServer_Database|||select * 
+from Wildfires.dbo.NWCG_UnitIDActive</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:SQLServer_Database
+Query=select * 
+from Wildfires.db...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="OBJECTID" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.NWCG_UnitIDActive" type="Int32" />
+            <Field name="UnitId" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.NWCG_UnitIDActive" type="V_WString" />
+            <Field name="GeographicArea" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.NWCG_UnitIDActive" type="V_WString" />
+            <Field name="Gacc" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.NWCG_UnitIDActive" type="V_WString" />
+            <Field name="WildlandRole" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.NWCG_UnitIDActive" type="V_WString" />
+            <Field name="UnitType" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.NWCG_UnitIDActive" type="V_WString" />
+            <Field name="Department" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.NWCG_UnitIDActive" type="V_WString" />
+            <Field name="Agency" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.NWCG_UnitIDActive" type="V_WString" />
+            <Field name="Parent" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.NWCG_UnitIDActive" type="V_WString" />
+            <Field name="Country" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.NWCG_UnitIDActive" type="V_WString" />
+            <Field name="State" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.NWCG_UnitIDActive" type="V_WString" />
+            <Field name="Code" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.NWCG_UnitIDActive" type="V_WString" />
+            <Field name="Name" size="255" source="File: aka:SQLServer_Database|||select * &#xA;from Wildfires.dbo.NWCG_UnitIDActive" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="342" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="OBJECTID" selected="False" />
+            <SelectField field="UnitId" selected="True" rename="Unit_ID" />
+            <SelectField field="Name" selected="True" />
+            <SelectField field="Gacc" selected="True" />
+            <SelectField field="WildlandRole" selected="True" rename="Wildland_Role" />
+            <SelectField field="UnitType" selected="True" rename="Unit_Type" />
+            <SelectField field="Department" selected="True" />
+            <SelectField field="Agency" selected="True" />
+            <SelectField field="State" selected="True" />
+            <SelectField field="Country" selected="True" />
+            <SelectField field="GeographicArea" selected="True" rename="Geographic_Area" />
+            <SelectField field="Code" selected="True" />
+            <SelectField field="Parent" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="534" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:azure_prod|||NWCG_Data</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Append</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:azure_prod
+Query=NWCG_Data</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>NWCG</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

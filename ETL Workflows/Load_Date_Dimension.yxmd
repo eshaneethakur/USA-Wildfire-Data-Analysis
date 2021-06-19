@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:test|||select Fire.DISCOVERY_DOY,
+	Fire.FIRE_YEAR,
+	Fire.DISCOVERY_TIME,
+	Fire.CONT_DOY,
+	Fire.CONT_TIME 
+from Fire</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:test
+Query=select Fire.DISCOVERY_DOY,...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DISCOVERY_DOY" source="File: aka:test|||select Fire.DISCOVERY_DOY,&#xA;	Fire.FIRE_YEAR,&#xA;	Fire.DISCOVERY_TIME,&#xA;	Fire.CONT_DOY,&#xA;	Fire.CONT_TIME &#xA;from Fire" type="Int32" />
+            <Field name="FIRE_YEAR" source="File: aka:test|||select Fire.DISCOVERY_DOY,&#xA;	Fire.FIRE_YEAR,&#xA;	Fire.DISCOVERY_TIME,&#xA;	Fire.CONT_DOY,&#xA;	Fire.CONT_TIME &#xA;from Fire" type="Int32" />
+            <Field name="DISCOVERY_TIME" size="4" source="File: aka:test|||select Fire.DISCOVERY_DOY,&#xA;	Fire.FIRE_YEAR,&#xA;	Fire.DISCOVERY_TIME,&#xA;	Fire.CONT_DOY,&#xA;	Fire.CONT_TIME &#xA;from Fire" type="V_WString" />
+            <Field name="CONT_DOY" source="File: aka:test|||select Fire.DISCOVERY_DOY,&#xA;	Fire.FIRE_YEAR,&#xA;	Fire.DISCOVERY_TIME,&#xA;	Fire.CONT_DOY,&#xA;	Fire.CONT_TIME &#xA;from Fire" type="Int32" />
+            <Field name="CONT_TIME" size="4" source="File: aka:test|||select Fire.DISCOVERY_DOY,&#xA;	Fire.FIRE_YEAR,&#xA;	Fire.DISCOVERY_TIME,&#xA;	Fire.CONT_DOY,&#xA;	Fire.CONT_TIME &#xA;from Fire" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="306" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeParse(ToString([FIRE_YEAR]),&quot;%Y&quot;)" field="Year" size="10" type="Date" />
+            <FormulaField expression="DateTimeAdd([Year],[DISCOVERY_DOY]-1,&quot;days&quot;)" field="Discovery_Date" size="10" type="Date" />
+            <FormulaField expression="DateTimeAdd([Year],[CONT_DOY]-1,&quot;days&quot;)" field="Cont_Date" size="10" type="Date" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Year = DateTimeParse(ToString([FIRE_YEAR]),"%Y")
+Discovery_Date = DateTimeAdd([Y...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="174" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="DISCOVERY_TIME" selected="True" type="Int32" size="4" />
+            <SelectField field="CONT_TIME" selected="True" type="Int32" size="4" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="474" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Date_ID" selected="False" type="Int64" size="8" />
+            <SelectField field="FIRE_YEAR" selected="True" rename="Fire_Year" />
+            <SelectField field="Discovery_Date" selected="True" />
+            <SelectField field="DISCOVERY_DOY" selected="True" rename="Discovery_DOY" />
+            <SelectField field="DISCOVERY_TIME" selected="True" rename="Discovery_Time" />
+            <SelectField field="Cont_Date" selected="True" />
+            <SelectField field="CONT_DOY" selected="True" rename="Cont_DOY" />
+            <SelectField field="CONT_TIME" selected="True" rename="Cont_Time" />
+            <SelectField field="Year" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="858" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:azure_prod|||Date_Dimension</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Append</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:azure_prod
+Query=Date_Dimension</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="606" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Fire_Year" />
+            <Field field="Discovery_Date" />
+            <Field field="Discovery_DOY" />
+            <Field field="Discovery_Time" />
+            <Field field="Cont_Date" />
+            <Field field="Cont_DOY" />
+            <Field field="Cont_Time" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="726" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>Date_ID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Unique" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Load_Date_Dimension</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

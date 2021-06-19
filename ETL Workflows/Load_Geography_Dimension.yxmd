@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">aka:SQLServer_Database|||select Wildfires.dbo.Fires.LATITUDE,
+	Wildfires.dbo.Fires.LONGITUDE,
+	Wildfires.dbo.Fires.STATE,
+	Wildfires.dbo.Fires.COUNTY,
+	Wildfires.dbo.Fires.FIPS_CODE,
+	Wildfires.dbo.Fires.FIPS_NAME 
+from Wildfires.dbo.Fires</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:SQLServer_Database
+Query=select Wildfires.dbo.Fires.L...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="LATITUDE" source="File: aka:SQLServer_Database|||select Wildfires.dbo.Fires.LATITUDE,&#xA;	Wildfires.dbo.Fires.LONGITUDE,&#xA;	Wildfires.dbo.Fires.STATE,&#xA;	Wildfires.dbo.Fires.COUNTY,&#xA;	Wildfires.dbo.Fires.FIPS_CODE,&#xA;	Wildfires.dbo.Fires.FIPS_NAME &#xA;from Wildfires.dbo.Fires" type="Double" />
+            <Field name="LONGITUDE" source="File: aka:SQLServer_Database|||select Wildfires.dbo.Fires.LATITUDE,&#xA;	Wildfires.dbo.Fires.LONGITUDE,&#xA;	Wildfires.dbo.Fires.STATE,&#xA;	Wildfires.dbo.Fires.COUNTY,&#xA;	Wildfires.dbo.Fires.FIPS_CODE,&#xA;	Wildfires.dbo.Fires.FIPS_NAME &#xA;from Wildfires.dbo.Fires" type="Double" />
+            <Field name="STATE" size="255" source="File: aka:SQLServer_Database|||select Wildfires.dbo.Fires.LATITUDE,&#xA;	Wildfires.dbo.Fires.LONGITUDE,&#xA;	Wildfires.dbo.Fires.STATE,&#xA;	Wildfires.dbo.Fires.COUNTY,&#xA;	Wildfires.dbo.Fires.FIPS_CODE,&#xA;	Wildfires.dbo.Fires.FIPS_NAME &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="COUNTY" size="255" source="File: aka:SQLServer_Database|||select Wildfires.dbo.Fires.LATITUDE,&#xA;	Wildfires.dbo.Fires.LONGITUDE,&#xA;	Wildfires.dbo.Fires.STATE,&#xA;	Wildfires.dbo.Fires.COUNTY,&#xA;	Wildfires.dbo.Fires.FIPS_CODE,&#xA;	Wildfires.dbo.Fires.FIPS_NAME &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="FIPS_CODE" size="255" source="File: aka:SQLServer_Database|||select Wildfires.dbo.Fires.LATITUDE,&#xA;	Wildfires.dbo.Fires.LONGITUDE,&#xA;	Wildfires.dbo.Fires.STATE,&#xA;	Wildfires.dbo.Fires.COUNTY,&#xA;	Wildfires.dbo.Fires.FIPS_CODE,&#xA;	Wildfires.dbo.Fires.FIPS_NAME &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+            <Field name="FIPS_NAME" size="255" source="File: aka:SQLServer_Database|||select Wildfires.dbo.Fires.LATITUDE,&#xA;	Wildfires.dbo.Fires.LONGITUDE,&#xA;	Wildfires.dbo.Fires.STATE,&#xA;	Wildfires.dbo.Fires.COUNTY,&#xA;	Wildfires.dbo.Fires.FIPS_CODE,&#xA;	Wildfires.dbo.Fires.FIPS_NAME &#xA;from Wildfires.dbo.Fires" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="LATITUDE" selected="True" rename="Latitude" />
+            <SelectField field="LONGITUDE" selected="True" rename="Longitude" />
+            <SelectField field="STATE" selected="True" rename="State" size="10" />
+            <SelectField field="FIPS_CODE" selected="True" rename="County_Code" size="10" />
+            <SelectField field="FIPS_NAME" selected="True" rename="County_Name" size="100" />
+            <SelectField field="COUNTY" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="450" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>Geography_ID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="318" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Latitude" />
+            <Field field="Longitude" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="630" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:azure_prod|||Geography_Dimension</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Append</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:azure_prod
+Query=Geography_Dimension</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Unique" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Geography</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

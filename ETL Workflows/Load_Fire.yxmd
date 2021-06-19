@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:objectID|||select Fire.FIRE_CODE,
+	Fire.FIRE_NAME,
+	Fire.ICS_209_INCIDENT_NUMBER,
+	Fire.ICS_209_NAME,
+	Fire.MTBS_ID,
+	Fire.MTBS_FIRE_NAME,
+	Fire.OBJECTID 
+from Fire</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:objectID
+Query=select Fire.FIRE_CODE,
+	Fir...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="FIRE_CODE" size="10" source="File: aka:objectID|||select Fire.FIRE_CODE,&#xA;	Fire.FIRE_NAME,&#xA;	Fire.ICS_209_INCIDENT_NUMBER,&#xA;	Fire.ICS_209_NAME,&#xA;	Fire.MTBS_ID,&#xA;	Fire.MTBS_FIRE_NAME,&#xA;	Fire.OBJECTID &#xA;from Fire" type="V_WString" />
+            <Field name="FIRE_NAME" size="255" source="File: aka:objectID|||select Fire.FIRE_CODE,&#xA;	Fire.FIRE_NAME,&#xA;	Fire.ICS_209_INCIDENT_NUMBER,&#xA;	Fire.ICS_209_NAME,&#xA;	Fire.MTBS_ID,&#xA;	Fire.MTBS_FIRE_NAME,&#xA;	Fire.OBJECTID &#xA;from Fire" type="V_WString" />
+            <Field name="ICS_209_INCIDENT_NUMBER" size="255" source="File: aka:objectID|||select Fire.FIRE_CODE,&#xA;	Fire.FIRE_NAME,&#xA;	Fire.ICS_209_INCIDENT_NUMBER,&#xA;	Fire.ICS_209_NAME,&#xA;	Fire.MTBS_ID,&#xA;	Fire.MTBS_FIRE_NAME,&#xA;	Fire.OBJECTID &#xA;from Fire" type="V_WString" />
+            <Field name="ICS_209_NAME" size="255" source="File: aka:objectID|||select Fire.FIRE_CODE,&#xA;	Fire.FIRE_NAME,&#xA;	Fire.ICS_209_INCIDENT_NUMBER,&#xA;	Fire.ICS_209_NAME,&#xA;	Fire.MTBS_ID,&#xA;	Fire.MTBS_FIRE_NAME,&#xA;	Fire.OBJECTID &#xA;from Fire" type="V_WString" />
+            <Field name="MTBS_ID" size="255" source="File: aka:objectID|||select Fire.FIRE_CODE,&#xA;	Fire.FIRE_NAME,&#xA;	Fire.ICS_209_INCIDENT_NUMBER,&#xA;	Fire.ICS_209_NAME,&#xA;	Fire.MTBS_ID,&#xA;	Fire.MTBS_FIRE_NAME,&#xA;	Fire.OBJECTID &#xA;from Fire" type="V_WString" />
+            <Field name="MTBS_FIRE_NAME" size="50" source="File: aka:objectID|||select Fire.FIRE_CODE,&#xA;	Fire.FIRE_NAME,&#xA;	Fire.ICS_209_INCIDENT_NUMBER,&#xA;	Fire.ICS_209_NAME,&#xA;	Fire.MTBS_ID,&#xA;	Fire.MTBS_FIRE_NAME,&#xA;	Fire.OBJECTID &#xA;from Fire" type="V_WString" />
+            <Field name="OBJECTID" source="File: aka:objectID|||select Fire.FIRE_CODE,&#xA;	Fire.FIRE_NAME,&#xA;	Fire.ICS_209_INCIDENT_NUMBER,&#xA;	Fire.ICS_209_NAME,&#xA;	Fire.MTBS_ID,&#xA;	Fire.MTBS_FIRE_NAME,&#xA;	Fire.OBJECTID &#xA;from Fire" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="294" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="FIRE_CODE" selected="True" rename="Fire_Code" />
+            <SelectField field="FIRE_NAME" selected="True" rename="Fire_Name" />
+            <SelectField field="ICS_209_INCIDENT_NUMBER" selected="True" rename="ICS_209_Incident_Number" />
+            <SelectField field="ICS_209_NAME" selected="True" rename="ICS_209_Name" />
+            <SelectField field="MTBS_FIRE_NAME" selected="True" rename="MTBS_Fire_Name" />
+            <SelectField field="OBJECTID" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="426" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>Fire_ID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int64</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="546" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:Azure_Fire|||Fire</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Append</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Azure_Fire
+Query=Fire</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="162" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="FIRE_CODE" />
+            <Field field="FIRE_NAME" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Unique" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Fire</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
